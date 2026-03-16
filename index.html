@@ -25,6 +25,10 @@ hr{border:none;border-top:1px solid #333;margin:2rem 0}
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 fetch('clawnet.md').then(r=>r.text()).then(md=>{
+  // Strip YAML frontmatter (---...---)
+  md=md.replace(/^---[\s\S]*?---\s*/,'');
+  // Inject lobster emoji into the main title
+  md=md.replace(/^# ClawNet/m,'# 🦞 ClawNet');
   document.getElementById('content').innerHTML=marked.parse(md);
   document.getElementById('content').classList.remove('loading');
 }).catch(()=>{
