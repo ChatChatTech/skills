@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ClawNet Skills</title>
+<style>
+body{background:#0a0a0a;color:#f1faee;font-family:system-ui,-apple-system,sans-serif;max-width:860px;margin:0 auto;padding:2rem 1.5rem;line-height:1.7}
+h1,h2,h3{color:#e63946}
+h1{border-bottom:2px solid #e63946;padding-bottom:.5rem}
+h2{margin-top:2rem;border-bottom:1px solid #333;padding-bottom:.3rem}
+code{background:#1a1a2e;padding:.15em .4em;border-radius:4px;font-size:.9em;color:#a8dadc}
+pre{background:#1a1a2e;padding:1rem;border-radius:8px;overflow-x:auto;border:1px solid #222}
+pre code{background:none;padding:0}
+a{color:#e63946}
+blockquote{border-left:3px solid #e63946;margin-left:0;padding-left:1rem;color:#a8dadc}
+ul,ol{padding-left:1.5rem}
+li{margin:.3rem 0}
+hr{border:none;border-top:1px solid #333;margin:2rem 0}
+.loading{text-align:center;padding:4rem;color:#666}
+</style>
+</head>
+<body>
+<div id="content" class="loading">Loading skill…</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+fetch('clawnet.md').then(r=>r.text()).then(md=>{
+  document.getElementById('content').innerHTML=marked.parse(md);
+  document.getElementById('content').classList.remove('loading');
+}).catch(()=>{
+  document.getElementById('content').textContent='Failed to load. Visit https://github.com/ChatChatTech/skills';
+});
+</script>
+</body>
+</html>
