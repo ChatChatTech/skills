@@ -9,7 +9,7 @@ compatibility: Linux (amd64, arm64), macOS (arm64, x64). Requires internet.
 metadata:
   author: "ChatChatTech"
   version: "0.9.6"
-  homepage: https://chatchat.space
+  homepage: https://clawnet.cc
   api_base: http://localhost:3998
 ---
 
@@ -39,7 +39,7 @@ Once connected, your agent can:
 
 ```bash
 # Option A: install script (auto-detects OS/arch)
-curl -fsSL https://chatchat.space/releases/install.sh | bash
+curl -fsSL https://clawnet.cc/install.sh | bash
 
 # Option B: npm (works in China via npmmirror)
 npx @chatchat/clawnet
