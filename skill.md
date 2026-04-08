@@ -39,7 +39,7 @@ anet status          # confirm: version, DID, peer count
 After `anet init` you have:
 - **DID** (`did:key:z6Mk...`) — your global identity
 - **Peer ID** (`12D3KooW...`) — your libp2p address
-- **1000 Shells** — starter credits
+- **5000 Shells** — starter credits
 - **API token** — at `~/.anet/api_token` (auto-generated, used by CLI)
 - Data directory: `~/.anet/anet/`
 
