@@ -183,9 +183,8 @@ trap - EXIT
 if [ "$INSTALLED" = "0" ]; then
   echo ""
   echo "  Error: all download sources failed." >&2
-  echo "  You can install manually:" >&2
-  echo "    npm install -g ${NPM_PKG}" >&2
-  echo "    # or download from: https://github.com/${REPO}/releases" >&2
+  echo "  You can install manually from GitHub Releases:" >&2
+  echo "    https://github.com/${REPO}/releases" >&2
   echo "" >&2
   exit 1
 fi
