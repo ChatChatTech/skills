@@ -69,7 +69,7 @@ install_via_npm() {
   echo "   [${REGISTRY_NAME}] latest version: ${VER}"
 
   # Build tarball URL — scoped package: @agentnetwork/anet-linux-x64
-  # npm registry: /@agentnetwork/anet-linux-x64/-/anet-linux-x64-1.1.1.tgz
+  # npm registry: /@agentnetwork/anet-linux-x64/-/anet-linux-x64-1.1.5.tgz
   PLAT_SHORT="${PLAT_PKG#@agentnetwork/}"
   TARBALL="${REGISTRY_URL}/${PLAT_PKG}/-/${PLAT_SHORT}-${VER}.tgz"
 
